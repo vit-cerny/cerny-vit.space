@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vít Černý &mdash; CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <script src="https://kit.fontawesome.com/a2d9d6b9b1.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary: #3f51b5;
+      --accent: #ff9800;
+      --text: #333;
+      --bg: #f9f9f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2437917.jpg&f=1&nofb=1&ipt=11b4e24b7f64dab3e137095266916e3e0ff9a858cae4fa2069e854e4f43f2bb0') center/cover no-repeat;
+      color: white;
+      padding: 15px 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    .contact-info {
+      font-size: 0.9rem;
+      text-align: right;
+    }
+    .contact-info a {
+      color: white;
+      margin-left: 10px;
+    }
+    #lang-switch {
+      position: absolute;
+      right: 20px;
+      top: 100%;
+      margin-top: 10px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    main {
+      padding-top: 130px;
+      padding: 130px 20px 20px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    ul li i, ul li img {
+      margin-right: 10px;
+      font-size: 1.4rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media(max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="header-left">
+      <img src="https://raw.githubusercontent.com/vit-cerny/vit-cerny.github.io/refs/heads/main/d400be42-b479-4c30-87ab-977bb1fb4612.png" alt="Vít Černý">
+      <h1>Vít Černý</h1>
+    </div>
+    <div class="contact-info">
+      <div><i class="fas fa-envelope"></i> witek.cerny@seznam.cz</div>
+      <div><i class="fab fa-linkedin"></i> linkedin.com/in/vitcerny</div>
+    </div>
+  </div>
+  <button id="lang-switch">CZ/EN</button>
+</header>
+
+<main>
+  <section>
+    <h2 class="lang-cz">Znalosti</h2>
+    <h2 class="lang-en" style="display:none">Skills</h2>
+    <div class="two-col">
+      <ul>
+        <li><i class="devicon-c-plain"></i> C</li>
+        <li><i class="devicon-python-plain"></i> Python</li>
+        <li><i class="devicon-csharp-plain"></i> C#</li>
+        <li><i class="devicon-cplusplus-plain"></i> C++</li>
+        <li><i class="devicon-java-plain"></i> Java</li>
+        <li><i class="devicon-html5-plain"></i> HTML/CSS</li>
+      </ul>
+      <ul>
+        <li><i class="fab fa-linux"></i> Linux</li>
+        <li><i class="fab fa-windows"></i> Windows</li>
+        <li><i class="fas fa-network-wired"></i> CCNA Networks</li>
+        <li><i class="fas fa-route"></i> CCNA Routing</li>
+        <li><i class="fas fa-globe"></i> Information Networks</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="lang-cz">Vzdělání</h2>
+    <h2 class="lang-en" style="display:none">Education</h2>
+    <p>Střední škola informatiky, poštovnictví a finančnictví Brno (2021–2025)</p>
+  </section>
+
+  <section>
+    <h2 class="lang-cz">Praxe</h2>
+    <h2 class="lang-en" style="display:none">Experience</h2>
+    <p>Vězeňská služba ČR, Věznice Rapotice – IT stáž (2024)</p>
+  </section>
+
+  <section>
+    <h2 class="lang-cz">Certifikáty</h2>
+    <h2 class="lang-en" style="display:none">Certifications</h2>
+    <ul>
+      <li>CCNA: Introduction to Networks</li>
+      <li>CCNA: Routing & Wireless Essentials</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="lang-cz">Jazyky</h2>
+    <h2 class="lang-en" style="display:none">Languages</h2>
+    <ul>
+      <li>Angličtina – C</li>
+      <li>Němčina – A1/A2</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="lang-cz">Soft Skills</h2>
+    <h2 class="lang-en" style="display:none">Soft Skills</h2>
+    <ul>
+      <li>Analytické myšlení</li>
+      <li>Spolupráce v týmu</li>
+      <li>Plánování a time management</li>
+      <li>Adaptabilita a chuť učit se</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const switchBtn = document.getElementById('lang-switch');
+  switchBtn.addEventListener('click', () => {
+    const cz = document.querySelectorAll('.lang-cz');
+    const en = document.querySelectorAll('.lang-en');
+    cz.forEach(el => el.style.display = (el.style.display === 'none' ? '' : 'none'));
+    en.forEach(el => el.style.display = (el.style.display === 'none' ? '' : 'none'));
+  });
+</script>
+
+</body>
+</html>
